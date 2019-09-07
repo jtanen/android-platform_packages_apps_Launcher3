@@ -69,7 +69,7 @@ LOCAL_SRC_FILES := \
     $(call all-java-files-under, src_shortcuts_overrides) \
     $(call all-java-files-under, src_ui_overrides) \
     $(call all-java-files-under, ext_tests/src)
-    
+
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/ext_tests/res
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
@@ -83,6 +83,7 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_SYSTEM_EXT_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2
 LOCAL_REQUIRED_MODULES := privapp_whitelist_com.android.launcher3
+LOCAL_DEX_PREOPT := false
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-common.xml
 

@@ -29,6 +29,9 @@ android_library {
     ],
     manifest: "tests/tapl/AndroidManifest.xml",
     platform_apis: true,
+    dex_preopt: {
+        enabled: false,
+    }
 }
 
 java_library_static {
