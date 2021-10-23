@@ -49,6 +49,9 @@ android_library {
     resource_dirs: [ ],
     manifest: "tests/tapl/AndroidManifest.xml",
     platform_apis: true,
+    dex_preopt: {
+        enabled: false,
+    }
 }
 
 java_library_static {
@@ -120,6 +123,9 @@ android_library {
     lint: {
         baseline_filename: "lint-baseline-res-lib.xml",
     },
+    dex_preopt: {
+        enabled: false,
+    }
 }
 
 //
@@ -135,6 +141,9 @@ android_library {
     lint: {
         baseline_filename: "lint-baseline-common-deps-lib.xml",
     },
+    dex_preopt: {
+        enabled: false,
+    }
 }
 
 //
@@ -182,6 +191,9 @@ android_app {
     lint: {
         baseline_filename: "lint-baseline-launcher3.xml",
     },
+    dex_preopt: {
+        enabled: false,
+    }
 }
 
 // Library with all the dependencies for building quickstep
@@ -198,6 +210,9 @@ android_library {
     ],
     manifest: "quickstep/AndroidManifest.xml",
     min_sdk_version: "current",
+    dex_preopt: {
+        enabled: false,
+    }
 }
 
 
@@ -250,5 +265,8 @@ android_library {
     lint: {
         baseline_filename: "lint-baseline-go-res-lib.xml",
     },
+    dex_preopt: {
+        enabled: false,
+    }
 }
 

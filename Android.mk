@@ -40,6 +40,7 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_SYSTEM_EXT_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep
 LOCAL_REQUIRED_MODULES := privapp_whitelist_com.android.launcher3
+LOCAL_DEX_PREOPT := false
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := \
     $(LOCAL_PATH)/AndroidManifest.xml \
@@ -75,6 +76,7 @@ LOCAL_LICENSE_CONDITIONS := notice
 LOCAL_NOTICE_FILE := $(LOCAL_PATH)/NOTICE
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
+LOCAL_DEX_PREOPT := false
 
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, src) \
@@ -109,6 +111,7 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_SYSTEM_EXT_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3
 LOCAL_REQUIRED_MODULES := privapp_whitelist_com.android.launcher3
+LOCAL_DEX_PREOPT := false
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/quickstep/res
 
@@ -162,6 +165,7 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_SYSTEM_EXT_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep
 LOCAL_REQUIRED_MODULES := privapp_whitelist_com.android.launcher3
+LOCAL_DEX_PREOPT := false
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := \
     $(LOCAL_PATH)/go/AndroidManifest.xml \
